@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Breakout!</title>
+    <link rel="stylesheet" type="text/css" href="style/breakout.css">
+    <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <canvas id="game-canvas" width="480" height="600">
+        </canvas>
+        <div id="choose-mode">Choose a mode!</div>
+        <div id="high-score">High Score: </div>
+        <div id="new-high-score">New High Score!!</div>
+        <button id="start-button">Normal</button>
+        <button id="insane-button">INSANE</button>
+        <div id="game-over-message">
+            <p>Game Over
+                <p>
+        </div>
+    </div>
+    <h3 id='title'>Breakout!</h3>
+
+    
+        <script type="text/javascript" src="lib/breakout.js"></script>
+        <script>
+            $("#start-button").click(function() {
+                hideStartScreen();
+                start();
+            })
+            $("#insane-button").click(function() {
+                hideStartScreen();
+                insaneStart();
+            })
+            function hideStartScreen () {
+              $("#insane-button").hide();
+              $("#start-button").hide();
+              $('#choose-mode').hide();
+              $('#high-score').hide();
+            }
+        </script>
+        <script>
+            var highScore = localStorage.getItem('highScore') || 0;
+            $('#high-score').append(highScore);
+        </script>
+</body>
+
+</html>

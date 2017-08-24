@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: black;
+}
+#info {
+    text-align: center;
+}
+#info > a {
+    color: #999967;
+}
+#title {
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    color: #999967;
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 10px;
+}
+canvas {
+    background: lightblue;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 35%;
+    transition:background-color 0.5s ease;
+}
+
+#high-score {
+  position: absolute;
+  text-align: center;
+    transform: translate(-50%, -50%);
+    top: 15%;
+    left: 50%;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+#new-high-score {
+  position: absolute;
+  text-align: center;
+    transform: translate(-50%, -50%);
+    top: 15%;
+    left: 50%;
+    font-family: 'Press Start 2P', cursive;
+    visibility: hidden;
+}
+
+#choose-mode {
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  width: 20%;
+  height: 5%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+#start-button {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 10%;
+    height: 5%;
+      transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #266A2E;
+    color: #DDD;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 2px solid #AAA;
+    font-family: 'Press Start 2P', cursive;
+}
+#insane-button {
+  position: absolute;;
+  top: 40%;
+  left: 50%;
+  width: 10%;
+  height: 5%;
+    transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #000;
+  color: #DDD;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 2px solid #AAA;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.insane {
+  background-color: red;
+}
+
+.normal {
+  background-color: white;
+}
+#start-button:hover {
+    background-color: #676799;
+    cursor: hand;
+}
+
+#insane-button:hover {
+  background-color: red;
+  cursor: hand;
+}
+
+#game-over-message {
+  text-align: center;
+  color: black;
+  position: absolute;
+  visibility: hidden;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Press Start 2P', cursive;
+}
