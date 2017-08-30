@@ -1,4 +1,2 @@
 # blockade
 
-
-g
